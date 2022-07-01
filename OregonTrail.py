@@ -1,5 +1,3 @@
-from cmath import e
-
 print("Welcome to my Oregon Trail | Drinking Game!")
 leader_name = input("What is the name of your Wagon Leader?")
 age = int(input("what is your age?"))
@@ -30,19 +28,19 @@ if age >= 21:
                 print("You went into the gas station: got gas and got hella snacks for the road.")
             elif ans == "no":
                 print("Oof! You realize later that you're getting the munchies, you've lost 1 health points. Take a SHOT!")
-                health_pt -= 1 #lost 5 health points
+                health_pt -= 1 #lost 1 health points
 
             ans = input("10 miles out, you noticed you could stay on business route or take the hight way. Which way do you go? (business/highway)")
             if ans == "business":
                 print("You get hit with every red light.. You've lost 1 health points, Take a SHOT!")
-                health_pt -= 1 #lost 5 health points
+                health_pt -= 1 #lost 1 health points
 
                 if health_pt <= 0:
                     print("You have no health points, Game over")
             else: 
                 print("Huzzah! You made it home, everyone else takes a SHOT!")
         else:
-            print("You got hijacked and lost - Take TWO Shots!")
+            print(leader_name,"got hijacked and has died. Now take a Double Shot!")
 
     if will_play == "no":
         print("Aiight then, BBaiiiii~!")
