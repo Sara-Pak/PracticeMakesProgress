@@ -26,5 +26,9 @@ while True: # while user_guess != random_number: (another option/method)
     if user_guess == random_number:
         print("You got it!")
     else:
-        print("You got it WRONG!") 
-        print("You got it in ", str(guesses) + "guesses")
+        if user_guess > random_number:
+            print("You were above the number!")
+        else:
+            print("You were belove the number!")
+
+print("You got it in ", str(guesses) + "guesses")
