@@ -32,5 +32,4 @@ function factorial_using_recursion($n)
         $num = 5;
         print("Factorial of ".$num." using Recursion is: ". factorial_using_recursion(5). "\n");
         print("Factorial of ".$num." using Iteration is: ". factorial_using_recursion(5). "\n");
-    
 ?>
