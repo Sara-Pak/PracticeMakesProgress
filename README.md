@@ -1,2 +1,2 @@
 # 100DayChallenge
-small projects for 100 days
+small projects and examples for 100 days
