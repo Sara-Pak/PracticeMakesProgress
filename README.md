@@ -1,2 +1,2 @@
-<!--START_SESSION:waka-->
-<!--END_Section:waka-->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
