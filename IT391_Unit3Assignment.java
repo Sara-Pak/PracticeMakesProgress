@@ -3,11 +3,7 @@
 
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.TreeSet;
-
-import javax.naming.BinaryRefAddr;
-
 import java.util.Iterator;
 import java.util.SortedSet;
 import java.util.LinkedList;
@@ -159,84 +155,86 @@ public class IT391_Unit3Assignment
          System.out.println("------- | Part A : Section 3 | -------");
          System.out.println(" ");
 
-          //create an object of BinaryTree
-       
-
-          LinkedList<String> tree = new LinkedList<String>();
+    //      LinkedList<String> tree = new LinkedList<String>();
       
-        //create a class called Node 
-     class Node 
-         {
-           public Node left;
-           public Node right;
-           public int value;
-           public Node(int value)
-           {
-            this.value = value;
-           }
-
-         } 
-         
-         //create a class called BinaryTree
-         class BinaryTree 
-         {
-            //create nodes of the tree
-            public void Create()
-            {
-                BinaryTree tree = new BinaryTree();
-                Node rootnode = new Node(50);
-                tree.insert(rootnode, 30);
-                tree.insert(rootnode, 45);
-                tree.insert(rootnode, 12);
-                tree.insert(rootnode, 29);
-                System.out.println("The contents of the binary tree are: \n");
-                traverse(rootnode);
-            }
-
-            public void traverse(Node rootnode)
-            {
-                printlnOrder(rootnode); //use recursion to traverse the tree
-            }
-
-             //create an insert Method for BinaryTree
-            public void insert(Node node, int value)
-            {
-                if (value < node.value)
-                {
-                    if (node.left != null)
-                    {
-                        insert(node.left, value);
-                    }
-                    else
-                    {
-                        //insert + value + to left of node + node.value
-                        node.left = new Node(value);
-                    }
-                }
-                else if (value > node.value)
-                {
-                    if (node.right!= null)
-                    {
-                        insert(node.right, value);
-                    }
-                    else
-                    {
-                        //insert + value + to right of node + node.value
-                        node.right = new Node(value);
-                    }
-                }
+    //      //create a class called Node 
+    //      class Node 
+    //       {
+    //          Node left;
+    //          Node right;
+    //          int value;
+             
+    //         public Node(int value)
+    //         {
+    //          this.value = value;
+    //         }
+ 
+    //       } 
+          
+    //       //create a class called BinaryTree
+    //       class BinaryTree 
+    //       {
+    //          //create nodes of the tree
+    //          public void Create()
+    //          {
+    //              BinaryTree tree = new BinaryTree();
+    //              Node rootnode = new Node(50);
+    //              tree.insert(rootnode, 30);
+    //              tree.insert(rootnode, 45);
+    //              tree.insert(rootnode, 12);
+    //              tree.insert(rootnode, 29);
+    //              System.out.println("The contents of the binary tree are: \n");
+    //              traverse(rootnode);
+    //          }
+ 
+    //          public void traverse(Node rootnode)
+    //          {
+    //              printlnOrder(rootnode); //use recursion to traverse the tree
+    //          }
+ 
+    //           //create an insert Method for BinaryTree
+    //          public void insert(Node node, int value)
+    //          {
+    //              if (value < node.value)
+    //              {
+    //                  if (node.left != null)
+    //                  {
+    //                      insert(node.left, value);
+    //                  }
+    //                  else
+    //                  {
+    //                      //insert + value + to left of node + node.value
+    //                      node.left = new Node(value);
+    //                  }
+    //              }
+    //              else if (value > node.value)
+    //              {
+    //                  if (node.right!= null)
+    //                  {
+    //                      insert(node.right, value);
+    //                  }
+    //                  else
+    //                  {
+    //                      //insert + value + to right of node + node.value
+    //                      node.right = new Node(value);
+    //                  }
+    //              }
+     
+    //          }
+    //          public void printlnOrder(Node node)
+    //          {
+    //              if(node != null)
+    //              {
+    //                  printlnOrder(node.left);
+    //                  System.out.println("Traversed" + node.value + "\n");
+    //                  printlnOrder(node.right);
+    //              }
+    //          }
+ 
+    //  } 
     
-            }
-            public void printlnOrder(Node node)
-            {
-                if(node != null)
-                {
-                    printlnOrder(node.left);
-                    System.out.println("Traversed" + node.value + "\n");
-                    printlnOrder(node.right);
-                }
-            }
+    }
+}
+        
+         
 
-    } 
-
-}} 
