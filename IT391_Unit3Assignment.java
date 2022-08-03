@@ -16,7 +16,7 @@ public class IT391_Unit3Assignment
         System.out.println("------- | Part A : Section 1 | -------");
         System.out.println(" ");
 
-        // [] : array of professions
+        //create a string array of professions
         String[] professions = new String[] 
         { 
             "Software Engineer",
@@ -27,6 +27,7 @@ public class IT391_Unit3Assignment
             "Program Manager"
         };
         
+        //set and load the array
         HashSet<String> setProfessions = new HashSet<String>();
         try {
                 //taking the string (professions)
@@ -55,7 +56,8 @@ public class IT391_Unit3Assignment
                 System.out.println(" ");
                 System.out.println(" ");
                 System.out.println("Sorted List: ");
-
+                
+                //sort the set and load from the first profession 
                 SortedSet<String> sortedProfessions = new TreeSet<String>(setProfessions);
                 System.out.print("[");
                 
@@ -155,86 +157,87 @@ public class IT391_Unit3Assignment
          System.out.println("------- | Part A : Section 3 | -------");
          System.out.println(" ");
 
-    //      LinkedList<String> tree = new LinkedList<String>();
+         LinkedList<String> tree = new LinkedList<String>();
       
-    //      //create a class called Node 
-    //      class Node 
-    //       {
-    //          Node left;
-    //          Node right;
-    //          int value;
+         //create a class called Node 
+         class Node 
+          {
+             Node left;
+             Node right;
+             int value;
              
-    //         public Node(int value)
-    //         {
-    //          this.value = value;
-    //         }
+            public Node(int value)
+            {
+             this.value = value;
+            }
  
-    //       } 
+          } 
           
-    //       //create a class called BinaryTree
-    //       class BinaryTree 
-    //       {
-    //          //create nodes of the tree
-    //          public void Create()
-    //          {
-    //              BinaryTree tree = new BinaryTree();
-    //              Node rootnode = new Node(50);
-    //              tree.insert(rootnode, 30);
-    //              tree.insert(rootnode, 45);
-    //              tree.insert(rootnode, 12);
-    //              tree.insert(rootnode, 29);
-    //              System.out.println("The contents of the binary tree are: \n");
-    //              traverse(rootnode);
-    //          }
+          //create a class called BinaryTree
+          class BinaryTree 
+          {
+             //create nodes of the tree
+             public void Create()
+             {
+                 BinaryTree tree = new BinaryTree();
+                 Node rootnode = new Node(50);
+                 tree.insert(rootnode, 30);
+                 tree.insert(rootnode, 45);
+                 tree.insert(rootnode, 12);
+                 tree.insert(rootnode, 29);
+                 System.out.println("The contents of the binary tree are: \n");
+                 traverse(rootnode);
+             }
  
-    //          public void traverse(Node rootnode)
-    //          {
-    //              printlnOrder(rootnode); //use recursion to traverse the tree
-    //          }
+             public void traverse(Node rootnode)
+             {
+                 printlnOrder(rootnode); //use recursion to traverse the tree
+             }
  
-    //           //create an insert Method for BinaryTree
-    //          public void insert(Node node, int value)
-    //          {
-    //              if (value < node.value)
-    //              {
-    //                  if (node.left != null)
-    //                  {
-    //                      insert(node.left, value);
-    //                  }
-    //                  else
-    //                  {
-    //                      //insert + value + to left of node + node.value
-    //                      node.left = new Node(value);
-    //                  }
-    //              }
-    //              else if (value > node.value)
-    //              {
-    //                  if (node.right!= null)
-    //                  {
-    //                      insert(node.right, value);
-    //                  }
-    //                  else
-    //                  {
-    //                      //insert + value + to right of node + node.value
-    //                      node.right = new Node(value);
-    //                  }
-    //              }
+              //create an insert Method for BinaryTree
+             public void insert(Node node, int value)
+             {
+                 if (value < node.value)
+                 {
+                     if (node.left != null)
+                     {
+                         insert(node.left, value);
+                     }
+                     else
+                     {
+                         //insert + value + to left of node + node.value
+                         node.left = new Node(value);
+                     }
+                 }
+                 else if (value > node.value)
+                 {
+                     if (node.right!= null)
+                     {
+                         insert(node.right, value);
+                     }
+                     else
+                     {
+                         //insert + value + to right of node + node.value
+                         node.right = new Node(value);
+                     }
+                 }
      
-    //          }
-    //          public void printlnOrder(Node node)
-    //          {
-    //              if(node != null)
-    //              {
-    //                  printlnOrder(node.left);
-    //                  System.out.println("Traversed" + node.value + "\n");
-    //                  printlnOrder(node.right);
-    //              }
-    //          }
+             }
+             public void printlnOrder(Node node)
+             {
+                 if(node != null)
+                 {
+                     printlnOrder(node.left);
+                     System.out.println("Traversed" + node.value + "\n");
+                     printlnOrder(node.right);
+                 }
+             }
  
-    //  } 
+     } 
     
     }
 }
         
          
 
+ 

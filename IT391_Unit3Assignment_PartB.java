@@ -124,6 +124,10 @@ public class IT391_Unit3Assignment_PartB
         {
             System.out.print("Fred is NOT present in the list.");
         }
+
+         //-----------| Part B : Section 3 |--------- */
+
+         
     }
 
 }
